@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function App() {
   return (
     <>
@@ -7,13 +8,7 @@ function App() {
         <h1>Employee list</h1>
       </section>
       <section id="main">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <EmployeeList />
       </section>
       
 
