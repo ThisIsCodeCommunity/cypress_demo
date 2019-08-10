@@ -1,4 +1,9 @@
 describe('Display list of employees', () => {
+  beforeEach(() => {
+    cy.server()
+    cy.route({url: 'https://reqres.in/api/users?per_page=5', method: 'GET', response: 'fixture:employeesMock.json'})
+  });
+
   it('when a user visits the page', () => {
     cy.visit('http://localhost:3000')
     cy.get('section[id="header"]').should('contain', 'Employee list')
