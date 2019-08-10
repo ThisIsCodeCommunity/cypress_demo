@@ -15,10 +15,7 @@
     "cy:open": "yarn start & cypress open"
   },
   "eslintConfig": {
-    "extends": "react-app",
-    "globals": {
-      "cy": "cy"
-    }
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
