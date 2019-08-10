@@ -8,7 +8,7 @@ describe('Display list of employees', () => {
   it('lists 5 employee data in ul -> li ', () => {
     cy.visit('http://localhost:3000')
     cy.get('section[id="main"]').within(() => {
-      cy.get('li').should('have.length', 5)
+      cy.get('div[role="listitem"]').should('have.length', 5)
     })
     
   });
