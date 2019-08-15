@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('Display list of employees', () => {
   beforeEach(() => {
     cy.server()
@@ -5,7 +7,8 @@ describe('Display list of employees', () => {
   });
 
   it('when a user visits the page', () => {
-    cy.visit('http://localhost:3000')
+    // cy.visit('http://localhost:3000')
+    cy.visit('http://google.com')
     cy.get('section[id="header"]').should('contain', 'Employee list')
     
   });
